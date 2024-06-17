@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Théo Bautista - Développeur de Jeux Vidéo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <h1 id="page-title">Portfolio de Théo Bautista - Développeur de Jeux Vidéo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" id="nav-about">À propos</a></li>
+                    <li><a href="#projects" id="nav-projects">Projets</a></li>
+                    <li><a href="#contact" id="nav-contact">Contact</a></li>
+                </ul>
+                <div class="controls">
+                    <button id="theme-toggle"><img src="img/theme-icon.png" alt="Changer de thème" class="control-icon"></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 id="about-title">À propos de moi</h2>
+        <div class="about-content">
+            <img src="img/profile-photo.png" alt="Photo de Théo Bautista" class="profile-photo">
+            <p id="about-description">Je suis un développeur de jeux vidéo passionné avec une formation solide et de nombreux projets réalisés pendant mes cours. Mon objectif est de créer des expériences de jeu immersives et engageantes.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 id="projects-title">Mes Projets</h2>
+        <div class="sub-section">
+            <h3 id="unity-toggle" class="sub-section-toggle">Unity <span class="toggle-arrow">▼</span></h3>
+            <div id="unity-projects" class="sub-section-content">
+                <div class="project">
+                    <div class="project-details">
+                        <img src="img/unity-project-1.png" alt="Projet Unity 1" class="project-image">
+                        <div class="project-description">
+                            <h4 id="project-unity-1-title">Projet 1: Jeu de Plateforme</h4>
+                            <p id="project-unity-1-description">Description: Un jeu de plateforme en 2D où le joueur doit naviguer à travers des niveaux remplis d'obstacles et d'ennemis.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajouter d'autres projets Unity ici -->
+            </div>
+        </div>
+        <div class="sub-section">
+            <h3 id="unreal-toggle" class="sub-section-toggle">Unreal Engine <span class="toggle-arrow">▼</span></h3>
+            <div id="unreal-projects" class="sub-section-content">
+                <div class="project">
+                    <div class="project-details">
+                        <img src="img/unreal-project-1.png" alt="Projet Unreal Engine 1" class="project-image">
+                        <div class="project-description">
+                            <h4 id="project-unreal-1-title">Projet 2: Jeu de Stratégie en Temps Réel</h4>
+                            <p id="project-unreal-1-description">Description: Un jeu de stratégie où le joueur doit gérer des ressources et des unités pour vaincre l'ennemi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajouter d'autres projets Unreal Engine ici -->
+            </div>
+        </div>
+        <div class="sub-section">
+            <h3 id="cpp-toggle" class="sub-section-toggle">C++ <span class="toggle-arrow">▼</span></h3>
+            <div id="cpp-projects" class="sub-section-content">
+                <!-- Ajouter des projets C++ ici -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-description">Vous pouvez me retrouver sur :</p>
+        <a href="https://github.com/VolcaroCham" target="_blank">
+            <img src="img/github-logo.png" alt="GitHub" class="social-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/théo-bautista/" target="_blank">
+            <img src="img/linkedin-logo.png" alt="LinkedIn" class="social-logo">
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 <span id="footer-text">Portfolio de Théo Bautista - Développeur de Jeux Vidéo</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

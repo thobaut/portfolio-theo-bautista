@@ -1,10 +1,21 @@
+/**************************************
+
+                 Body
+
+**************************************/
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
+}
+
+#about, #projects, #contact {
+    padding: 50px 0;
+    text-align: center;
 }
 
 .light-theme {
@@ -12,69 +23,133 @@ body {
     color: #000000;
 }
 
+.light-theme header {
+    background: #d4d4d4;
+    color: #00c97f;
+}
+
+.light-theme .theme-control {
+    filter: invert(1);
+}
+
+.light-theme .project {
+    background: #f0f0f0;
+}
+
+.light-theme .social-logo {
+    filter: invert(1);
+}
+
+.light-theme footer {
+    background: #f0f0f0;
+    color: #000;
+}
+
+/**************************************
+
+                Header
+
+**************************************/
+
 header {
     background: #0a0a0a;
     color: #05e895;
-    padding: 20px 0;
     text-align: center;
+    font-size: x-large;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-header.light-theme {
-    background: #f0f0f0;
-    color: #05e895;
+header .theme-control button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    float: right;
+    margin-right: 10px;
 }
 
-nav ul {
+header h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: lighter;
+
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
+    background-color: transparent;
     display: inline;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 
-nav ul li a {
-    color: #05e895;
+header nav ul li a {
+    background-color: #05e895;
+    color: #ffffff;
+
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-nav .controls {
+header nav ul li a:hover {
+    background-color: #039e6b;
+    color: #ffffff;
+}
+
+header nav ul li a:active {
+    background-color: #003926;
+    color: #ffffff;
+}
+
+header nav {
     display: inline-block;
-    margin-left: 20px;
 }
 
-nav .controls button {
+header nav button {
     background-color: transparent;
     border: none;
-    padding: 5px;
-    margin-left: 5px;
     cursor: pointer;
 }
 
+/**************************************
+
+               Container
+
+**************************************/
+
 .container {
-    width: 80%;
+    width: 75%;
     margin: auto;
     overflow: hidden;
 }
 
-#about, #projects, #contact {
-    padding: 20px 0;
-    text-align: center;
-}
-
 .about-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .profile-photo {
     width: 150px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 7%;
+    
     margin-bottom: 20px;
+    margin-right: 50px;
 }
 
 .sub-section {
@@ -106,12 +181,31 @@ nav .controls button {
     border-radius: 8px;
 }
 
-.project h4 {
+.project h3 {
     color: #05e895;
 }
 
-.light-theme .project {
-    background: #f0f0f0;
+.project-details {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-description {
+    position: relative;
+    flex: 1;
+}
+.project-duration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #a7a7a7;
+    font-size: 12px;
 }
 
 .social-logo {
@@ -121,19 +215,12 @@ nav .controls button {
     transition: filter 0.3s;
 }
 
-.light-theme .social-logo {
-    filter: invert(1);
-}
-
 footer {
     background: #0a0a0a;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-}
 
-footer.light-theme {
-    background: #f0f0f0;
-    color: #000;
+    transition: background-color 0.3s, color 0.3s;
 }

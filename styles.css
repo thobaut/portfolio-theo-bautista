@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #121212;
+    background-color: #000410;
     color: #ffffff;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
@@ -24,8 +24,8 @@ body {
 }
 
 .light-theme header {
-    background: #d4d4d4;
-    color: #00c97f;
+    background: #e6e6e6;
+    color: #00ba76;
 }
 
 .light-theme .theme-control {
@@ -41,7 +41,7 @@ body {
 }
 
 .light-theme footer {
-    background: #f0f0f0;
+    background: #e6e6e6;
     color: #000;
 }
 
@@ -52,7 +52,7 @@ body {
 **************************************/
 
 header {
-    background: #0a0a0a;
+    background: #000207;
     color: #05e895;
     text-align: center;
     font-size: x-large;
@@ -137,6 +137,7 @@ header nav button {
 }
 
 .about-content {
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -148,7 +149,6 @@ header nav button {
     height: auto;
     border-radius: 7%;
     
-    margin-bottom: 20px;
     margin-right: 50px;
 }
 
@@ -241,7 +241,7 @@ header nav button {
 }
 
 footer {
-    background: #0a0a0a;
+    background: #000207;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;

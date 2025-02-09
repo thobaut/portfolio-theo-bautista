@@ -1,0 +1,315 @@
+/* Thème sombre */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Titres en vert menthe */
+h1, h2, h3 {
+  color: #64ffda;
+}
+
+/* Header */
+header {
+  background: #1e1e1e;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 80px; /* Nom plus gros */
+  margin-bottom: 30px;
+}
+
+header h3 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 40px; /* Plus d'espace entre "Engineering Student" et les boutons */
+}
+
+nav {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #64ffda;
+  color: #121212;
+  border-radius: 5px;
+}
+
+#about-title,
+#mes-travaux-title {
+  margin-bottom: 50px;
+}
+
+/* Section générale */
+section {
+  width: 80%;
+  margin: 50px auto; /* Plus d'espace entre le titre de la section et le reste */
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 170, 0.2);
+}
+
+/* À propos de moi */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px; /* Plus d'espace entre la photo et le texte */
+}
+
+.about-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile-photo {
+  width: 200px; /* Photo plus grande */
+  border-radius: 8px;
+}
+
+.cv-button-container {
+  margin-top: 20px; /* Plus d'espace entre la photo et le bouton */
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cv-button:hover,
+.cv-button:active {
+  background-color: #121212;
+  color: #64ffda;
+}
+
+.about-text {
+  margin-left: 50px;
+}
+
+/* Navigation catégories (Mes Travaux) */
+.categorie-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* Plus d'espace sous les titres de catégorie */
+}
+
+.categorie-titre {
+  margin: 0 25px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  color: #64ffda;
+}
+
+.categorie-titre.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #64ffda;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+/* Slider pour les travaux */
+.travaux-container {
+  overflow: hidden;
+}
+
+.travaux-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.travaux-categorie {
+  flex: 0 0 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* Grille pour afficher plusieurs travaux sur la même ligne */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Chaque bloc garde sa hauteur propre */
+}
+
+/* Sous-catégories pour Gaming Campus */
+.gaming-campus-sous {
+  width: 100%;
+}
+
+.sous-categorie-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sous-categorie-titre {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  color: #64ffda;
+}
+
+.sous-categorie-titre.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #64ffda;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.sous-travaux-container {
+  overflow: hidden;
+}
+
+.sous-travaux-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.sous-travaux-categorie {
+  flex: 0 0 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* Grille pour afficher les travaux dans la sous-catégorie */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Sur petit écran, aligner les travaux à gauche */
+@media (max-width: 767px) {
+  .travaux-categorie {
+    justify-content: flex-start;
+  }
+}
+
+/* Travaux */
+.travail {
+  background: #2c2c2c;  /* Couleur légèrement plus claire */
+  padding: 10px;
+  border-radius: 6px;
+  /* Adaptation pour afficher 4 par ligne sur grand écran, 2 par ligne sur moyen, 1 par ligne sur petit écran */
+  flex: 1 1 calc(23% - 20px);
+  max-width: calc(23% - 20px);
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .travail {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .travail {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.travail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.travail-titre {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #64ffda;
+}
+
+/* Détails cachés */
+.travail-details {
+  display: none;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #64ffda;
+}
+
+.project-duration {
+  font-size: 12px;
+  color: #64ffda;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: left; /* Titre "Contact" à gauche */
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+  margin-top: 30px;
+}
+
+.social-logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}

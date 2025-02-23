@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ingénieur - Théo Bautista</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 id="page-title">Théo BAUTISTA</h1>
+      <h3 id="page-subtitle">Engineering Student</h3>
+      <nav>
+        <ul>
+          <li><a href="#about" id="nav-about">À propos de moi</a></li>
+          <li><a href="#mes-travaux" id="nav-travaux">Mes Travaux</a></li>
+          <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- À propos de moi -->
+  <section id="about" class="container">
+    <h2 id="about-title">À propos de moi</h2>
+    <div class="about-content">
+      <div class="about-photo">
+        <img src="img/icons/profile-photo.png" alt="Photo de Théo Bautista" class="profile-photo">
+        <div class="cv-button-container">
+          <a href="img/cv/cvTB.html" class="cv-button" target="_blank">Voir mon CV</a>
+        </div>
+      </div>
+      <div class="about-text">
+        <p id="about-description">
+          Tout d'abord, un grand merci à vous de regarder mon portfolio. J'ai 
+          mis du temps à confectionner point par point tous les éléments 
+          de ce "CV en ligne", et je vous remercie infiniment de l'attention que 
+          vous pourrez porter à ce petit projet.
+          <br>
+          <br>
+          Actuellement étudiant en 2ème année d'école d'ingénieur à l'EIDD à Paris, 
+          j'ai commencé le code depuis 2017. Ce n'est que récemment que j'ai 
+          commencé à réaliser des petits projets concrets au lieu d'uniquement 
+          coder pour mes cours.
+          <br>
+          Je trouve cet exercice très enrichissant car je peux vraiment mettre 
+          en forme ce que j'ai envie de réaliser. Que ce soit des petits 
+          projets pour moi ou mes proches, ou bien des outils pour aider les gens pour une 
+          tâche précise, j'essaie de réaliser des petits projets divers à 
+          un rythme régulier.
+          <br>
+          <br>
+          Je vous remercie encore une fois de l'attention que vous pourrez 
+          porter à ce CV en ligne. J'ai également mis mon CV en dessous de ma 
+          photo si jamais vous vouliez le télécharger et voir un CV plus 
+          classique et qui contient mes expériences professionnelles, mes 
+          centres d'intérêt, mon parcours scolaire ainsi que mes 
+          compétences techniques.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mes Travaux -->
+  <section id="mes-travaux" class="container">
+    <h2 id="mes-travaux-title">Mes Travaux</h2>
+    <!-- Navigation des catégories principales -->
+    <div class="categorie-nav">
+      <span class="categorie-titre active" data-index="0">Gaming Campus</span>
+      <span class="categorie-titre" data-index="1">École d'Ingénieur</span>
+      <span class="categorie-titre" data-index="2">Stages</span>
+      <span class="categorie-titre" data-index="3">Personnel</span>
+    </div>
+
+    <!-- Slider principal -->
+    
+    <div class="travaux-container">
+      <div class="travaux-slider">
+        
+        <!-- Catégorie : Gaming Campus -->
+        
+        <div class="travaux-categorie">
+          <!-- Sous-catégories pour Gaming Campus -->
+          <div class="gaming-campus-sous">
+            <!-- Navigation sous-catégories -->
+            <div class="sous-categorie-nav">
+              <span class="sous-categorie-titre active" data-index="0">Unity</span>
+              <span class="sous-categorie-titre" data-index="1">Unreal Engine</span>
+              <span class="sous-categorie-titre" data-index="2">C++</span>
+            </div>
+            <!-- Slider des sous-catégories -->
+            <div class="sous-travaux-container">
+              <div class="sous-travaux-slider">
+                
+                <!-- Sous-catégorie : Unity -->
+                
+                <div class="sous-travaux-categorie">
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">School Eater</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Mon premier jeu Unity
+                        <br>
+                        Le but était de concevoir un jeu dans lequel 
+                        le professeur d'un petit village sauvait les enfants 
+                        de sa classe d'une attaque de monstres
+                        <br>
+                        <br>
+                        Globalement un très bon projet pour 
+                        apprendre les bases d'Unity
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Sea Scape</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Comme une suite du premier projet School Eater
+                        <br>
+                        Il fallait consolider les bases que l'on 
+                        avait assimilées sur le projet précédent 
+                        en rajoutant plus d'éléments et en 
+                        explorant plus de mécaniques
+                        <br>
+                        <br>
+                        Avec les bases consolidées, il était temps de 
+                        s'attaquer à des projets plus gros
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+                  
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Unity - VR</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Pas de nom pour ce projet là
+                        <br>
+                        C'était la première fois que j'ai dû toucher
+                        à de la réalité virtuelle 
+                        (ou VR pour Virtual Reality) pour un projet
+                        <br>
+                        <br>
+                        J'étais malheureusement tout seul à travailler 
+                        dans un groupe de 2, mais cela ne m'a pas empêché 
+                        de réussir ma partie du projet, c'est-à-dire 
+                        le code pour faire fonctionner les manettes 
+                        et donc les "mains" du personnage ainsi que le 
+                        déplacement et le système pour attraper des objets
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Capsule League</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Un petit jeu de football pour tester 
+                        la physique de Unity
+                        <br>
+                        Le but était simple, marquer dans le but de 
+                        son adversaire avec un terrain consitué 
+                        d'obstacles générés procéduralement
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">ZombieLand</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Premier projet avec une intelligence 
+                        artificielle faite à la main
+                        <br>
+                        Également le premier jeu 2D que j'ai fait, il 
+                        fallait créer un top-down shooter qui intègre 
+                        une IA autre que l'IA de base de Unity
+                        <br>
+                        <br>
+                        Le projet a été assez compliqué car nous étions 
+                        une équipe de 5, et que tout le monde interférait 
+                        avec le code des autres
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Party Shaders</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Ce projet avait pour but de nous familiariser 
+                        avec les effets visuels et apprendre sur le 
+                        pourquoi du comment ces "shaders" existent
+                        <br>
+                        <br>
+                        En tant que développeur de jeu, ce n'est pas 
+                        vraiment notre spécialité de créer du visuel, 
+                        mais ce projet était très intéressant autant 
+                        théoriquement qu'en pratique
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Sous-catégorie : Unreal Engine -->
+
+                <div class="sous-travaux-categorie">
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Unreal 5 Beginnings</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Les premiers pas dans ce nouveau moteur 
+                        graphique qu'est Unreal Engine 5
+                        <br>
+                        Pas de code cette fois-ci, tout était fait 
+                        en visual scripting avec le système de 
+                        Blueprint
+                        <br>
+                        <br>
+                        Pour ces premiers pas, c'était très difficile.
+                        <br>
+                        Le moteur est très différent et il y a énormément 
+                        de contenu, on s'y perd très facilement
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">VolcaRunner</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Un runner à la Subways Surfers
+                        <br>
+                        Cela met en scène un coureur qui doit survivre 
+                        le plus longtemps possible sur 3 "lignes" qui 
+                        comportent des obstacles générés procéduralement
+                        <br>
+                        <br>
+                        Entièrement rédigé en C++, ce qui a été 
+                        particulièrement laborieux dû à la complexité 
+                        des règles du C++ imposées par Unreal Engine
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Wisdom Theif</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Un autre runner à la Subways Surfers en tant que 
+                        projet de fin d'année
+                        <br>
+                        Un projet a but initial éducatif dans lequel on 
+                        incarne un renard qui se fait courser dans une 
+                        bibliothèque car il a volé des parchemins
+                        <br>
+                        Il faut réunir des collectables et des pages qui 
+                        constituent des livres éducatifs qui permettent 
+                        d'apprendre des anecdotes de culture générale
+                        <br>
+                        <br>
+                        Ce projet a été une catastrophe sur tous les points, 
+                        très probablement expliqué par la volonté du reste 
+                        du groupe de faire ce projet sur Unreal Engine et 
+                        non Unity 
+                      </p>
+                      <span class="project-duration">[1 mois]</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Sous-catégorie : C++ -->
+
+                <div class="sous-travaux-categorie">
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Cringe Adventure</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Le tout premier projet ue j'ai fait dans cette école
+                        <br>
+                        Il s'agissait d'une simple jeu sur le terminal dans 
+                        lequel il fallait traverser un donjon et affronter 
+                        des ennemis qui nous bloquent la route
+                        <br>
+                        <br>
+                        Pour un premier projet, c'était plutôt réussi malgré 
+                        l'absence totale d'un membre de notre groupe de 3
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">2D Platformer</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Le deuxième projet qui venait juste après Cringe 
+                        Adventure
+                        <br>
+                        Cette fois-ci, nous avions la librairie graphique 
+                        SMFL pour pouvoir faire un vrai jeu avec des vrais 
+                        graphismes 2D
+                        <br>
+                        Le but étant de faire un petit jeu de platformes à 
+                        la Mario dans lequel il fallait traverser le niveau 
+                        et arriver à la fin
+                        <br>
+                        <br>
+                        Le projet a été un échec total dû au fait que j'étais tout 
+                        seul dans ce groupe de 3 ainsi que le fait qu'il y ait 
+                        eu des problèmes d'intégration de la librairie
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">AntGame</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Un jeu qui devait s'inspirer de "Lemmings" dans lequel on 
+                        devait se familiariser avec une deuxième librairie 
+                        graphique : Cocos2DX
+                        <br>
+                        Pour ce jeu, mon groupe a décidé de partir sur un thème 
+                        fourmis qui devait miner de la terre pour avancer et 
+                        résoudre des puzzles
+                        <br>
+                        <br>
+                        Malgré un groupe toujours inactif et une nouvelles fois 
+                        des problèmes d'intégration de la libraire, j'étais 
+                        content du code que j'avais fait et surtout sur une 
+                        librairie nouvelle 
+                      </p>
+                      <span class="project-duration">[2 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">VolcaEngine</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Le plus gros projet que j'ai fait et dans lequel j'ai 
+                        mis le plus de travail dedans
+                        <br>
+                        C'était un projet mi théorique et mi pratique. Il fallait 
+                        créer de A à Z un moteur graphique avec une des 
+                        nombreuses librairies de rendu graphique
+                        <br>
+                        Comprendre comment et pourquoi une image est affichée 
+                        sur l'ecran était très intéressant et instructif
+                        <br>
+                        <br>
+                        Initialement prévu pour 4 semaines, le projet a été 
+                        allongé d'une semaine au vu de la masse de travail 
+                        qu'était ce projet
+                        <br>
+                        Pour changer, un groupe de 5 totalement absent et 
+                        me laissant quasiment seul sur le code du moteur
+                      </p>
+                      <span class="project-duration">[5 semaines]</span>
+                    </div>
+                  </div>
+
+                  <div class="travail">
+                    <div class="travail-header">
+                      <span class="travail-titre">Bastion Blitz</span>
+                      <button class="toggle-btn">▼</button>
+                    </div>
+                    <div class="travail-details">
+                      <p>
+                        Un projet solo de fin d'année en remplacement d'un grand 
+                        projet commun qui devait se faire par groupes de 6 
+                        suite à des désaccords et des abandons d'école
+                        <br>
+                        Il s'agit d'un petit jeu de tower defense réalisé avec la 
+                        librairie Cocos2DX dans lequel des tours plaçables 
+                        devaient défendre contre des vagues infinies 
+                        d'ennemis qui veulent infiltrer un château
+                        <br>
+                        <br>
+                        Un projet qui devait se faire en urgence mais que j'ai 
+                        tout de même trouvé très instructif et que j'ai pris 
+                        beaucoup de plaisir à réaliser
+                      </p>
+                      <span class="project-duration">[3 semaines]</span>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Catégorie : École d'Ingénieur -->
+        
+        <div class="travaux-categorie">
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Java RPG Adventure</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Ma première expérience en programmation de 
+                jeu vidéo
+                <br>
+                Il s'agissait du projet final de mon cours de 
+                Java en 2021 et que j'ai adoré développer 
+                pendant ce mois et demi où il n'y avait plus de 
+                cours avant les examens. J'ai pu donc dédier la 
+                quasi exclusivité de mon temps libre à coder ce jeu 
+                et le résultat final était au-delà de toutes mes 
+                espérances
+              </p>
+              <span class="project-duration">[1 mois et demi]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Matlab</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Dans le cadre de mon cours d'Automatique, il m'a 
+                fallu utiliser un langage conçu pour les 
+                automaticiens : Matlab 
+                <br>
+                <br>
+                Il s'agit d'un langage qui permet de réaliser des 
+                simulations graphiques d'équations complexes 
+                pour les calculs de position et d'erreurs physiques 
+                avec l'utilisation de graphiques et matrices pour 
+                la mise en place et le contrôle des systèmes en jeu
+                <br>
+                Cela peut aller d'une simulation d'un simple 
+                placement en banque ou en bourse au calcul de mise 
+                en orbite de lanceurs et satellites
+              </p>
+              <span class="project-duration">[-]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Temps Réel</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Dans le cadre de mon cours de Systèmes Temps Réel, 
+                j'ai utilisé le langage C ainsi qu'un autre langage 
+                adapté pour les applications en temps réel : Heptagon
+                <br>
+                <br>
+                Heptagon est en langage inspiré du langage Lustre, qui 
+                est assez populaire pour les utilisations de temps réel. 
+                C'est un langage assez atypique, que ce soit au niveau 
+                de la syntaxe ou du fonctionnement en général
+                <br>
+                Tous les travaux pratiques se faisaient en réalisant 
+                3 objectifs. Ils m'ont permis de mieux comprendre 
+                comment marche une compilation et comment bien 
+                compiler tout ce dont on a besoin car c'était 
+                probablement le point le plus important du cours
+              </p>
+              <span class="project-duration">[-]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Base de données</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Dans le cadre de mon cours de Base de données, 
+                il m'a fallu utiliser un langage qui m'était encore 
+                inconnu : SQL
+                <br>
+                <br>
+                C'est le langage maître lorsque l'on parle de base de 
+                données. Très facile à apprendre mais difficile à 
+                maîtriser
+                <br>
+                Mon projet de fin de semestre a été de mettre en place 
+                une base de données au choix et de créer des requêtes 
+                spécifiques. En groupe de 3, nous avions choisi de 
+                créer une base de données regroupant le maximum 
+                de produits des restaurants McDonald's
+              </p>
+              <span class="project-duration">[-]</span>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Catégorie : Stages -->
+        
+        <div class="travaux-categorie">
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Malakoff Humanis - Interface de contrôle</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Tentative de créer une interface de contrôle 
+                afin de contrôler les branchement dans les 
+                salles de brassage de l'entreprise
+                <br>
+                <br>
+                Abandonné au fait que je faisais ce projet sur 
+                mon temps libre, et donc impossible de se concentrer 
+                sur la tâche à faire. N'ayant pas été embauché en 
+                tant que développeur, la baisse de motivation et le 
+                travail que j'avais à faire m'ont poussé à arrêter 
+                la création de cet outil qui aurait pu faire gagner 
+                du temps aux employés du service Proximité
+              </p>
+              <span class="project-duration">[1 semaine - Abandonné]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Avistel - Communication BLE</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Mise en place d'un système de communication TCP/IP entre 
+                des détecteurs Bluetooth et un serveur/base de données 
+                qui va intercepter les données reçues afin de pouvoir 
+                les exploiter à des fins de sécurité
+                <br>
+                <br>
+                Un projet très instructif qui m'a permis de comprendre 
+                mieux le développement réseau et de consolider mes 
+                connaissances en C++, Arduino et SQL
+              </p>
+              <span class="project-duration">[3 mois]</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Catégorie : Personnel -->
+
+        <div class="travaux-categorie">
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Portfolio</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Le portfolio que vous êtes actuellement en train 
+                de regarder
+                <br>
+                <br>
+                En tant que développeur qui n'a jamais appris le 
+                HTML/CSS/JS à l'école mais seulement en autodidacte, 
+                c'est tout de même un projet assez conséquent et je 
+                voulais créer ce bout de ma vie de développeur afin
+                de présenter tous les projets que j'ai réalisé avec 
+                professionnalisme, rigueur et passion
+              </p>
+              <span class="project-duration">[1 mois - Abandonné]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Smash Bros Java</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Une tentative de réplique du fameux jeu vidéo Smash 
+                Bros fait sous langage Java
+                <br>
+                <br>
+                Abandonné par manque de motivation et des nombreuses 
+                mécaniques que je n'arrivais pas à implémenter
+              </p>
+              <span class="project-duration">[1 mois - Abandonné]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Coderush pour une personne chère</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Un mélange de 9 mini projets en 1 semaine 
+                qui représentaient le nombre de jours pendant lesquels 
+                ma copine était partie en vacances
+                <br>
+                <br>
+                Les projets contiennent des vidéos ainsi que 
+                HTML/CSS/JS, Python, Java, du calculateur en 
+                ligne Desmos et du logiciel de création de jeu vidéo Godot
+              </p>
+              <span class="project-duration">[1 semaine]</span>
+            </div>
+          </div>
+
+          <div class="travail">
+            <div class="travail-header">
+              <span class="travail-titre">Simple Unit Converter</span>
+              <button class="toggle-btn">▼</button>
+            </div>
+            <div class="travail-details">
+              <p>
+                Un petit site simple qui permet de convertir des 
+                unités
+                <br>
+                <br>
+                <a href="https://thobaut.github.io/simple-unit-converter/" target="_blank">
+                  Mis en ligne sous Github Pages
+                </a>
+              </p>
+              <span class="project-duration">[1 jour]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 id="contact-title">Contact</h2>
+    <p id="contact-description">Vous pouvez me retrouver sur :</p>
+    <div class="contact-icons">
+      <a href="https://github.com/thobaut" target="_blank">
+        <img src="img/icons/github-logo.png" alt="GitHub" class="social-logo">
+      </a>
+      <a href="https://www.linkedin.com/in/théo-bautista/" target="_blank">
+        <img src="img/icons/linkedin-logo.png" alt="LinkedIn" class="social-logo">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024-2025 <span id="footer-text">Théo Bautista - Embedded Systems Engineer</span></p>
+  </footer>
+</body>
+</html>
